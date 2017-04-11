@@ -6,7 +6,7 @@ before_action :authenticate_user!, only:[:new, :create, :update, :edit, :destroy
   end
 
   def show
-    @jobs = Job.find(params[:id])
+    @job = Job.find(params[:id])
   end
 
   def new
