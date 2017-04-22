@@ -19,57 +19,216 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.jumbotron {
-  background-image:url('http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-542213.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 110px;
+//------navigation bar---------
+
+.navbar-default {
+
+    background-color: #233140;
+    border-color: #CCC;
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
-.title {
-  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
-  text-align: center;
-  margin-top: 200px;
-  margin-bottom: 80px;
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+    padding: 10px 15px;
+    line-height: 40px;
+    font-size: 25px;
 }
 
-.slogan {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  text-align: center;
-  color: white;
-  top: 12px;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #FF0000;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FF0000;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #FF0000;
+    background-color: #FFE0B2;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #FFE0B2;
+    color: #212121;
+}
+
+//---------Box---------
+
+
+.box {
+    background-image: url("pic01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+
+    .box-inner {
+        background-color: rgba(0, 0, 0, 0.29);
+        padding-bottom: 5px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .title {
+        text-align: center;
+        color: #FFF;
+        font-size: 4em;
+        letter-spacing: 0.6em;
+        word-spacing: 0.8em;
+        margin-bottom: 80px;
+    }
+
+    .slogan {
+        color: #FFF;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: 25px;
+        top: 12px;
+    }
+
+    .lead {
+        margin-bottom: 60px;
+        text-align: center;
+        color: white;
+    }
+}
+
+//---------Content---------
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
 }
 
 .lead {
-  margin-bottom: 60px;
-  text-align: center;
-  color: white;
+    font-size: 18px;
+    font-weight: 400;
 }
 
-.caption {
-  margin: 30px;
-  text-align: center;
-  top: 20px;
+
+//---------Footer---------
+
+footer {
+    color: #999;
 }
 
-.thumbnail {
-    border: 0 none;
-    box-shadow: none;
-    margin-top: 60px;
+footer .footer-below {
+    padding: 25px 0;
 }
 
-.custab{
-  border: 1px solid #ccc;
+//---------devise-view---------
 
-  padding: 5px;
-  margin: 5% 0;
-  box-shadow: 3px 3px 2px #ccc;
-
-  transition: 0.5s;
+.devise-view img {
+    background-image: url("pic-4.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
+}
+.devise-view a:link {
+    color: #fff;
 }
 
-.custab:hover{
-  box-shadow: 3px 3px 0px transparent;
-  transition: 0.5s;
+.page-wrap {
+    min-height: 100%;
+    min-width: 100%;
+    margin-bottom: -30px;
+}
+.devise-view {
+    margin-bottom: -10px;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -999;
+}
+.devise-view .devise-sign-up {
+    margin: 50px auto;
+    color: #ffffff;
+    width: 900px;
+    height: 500px;
+}
+.devise-view .devise-sign-up .left {
+    padding: 0 10px 20px;
+    width: 580px;
+    height: 500px;
+    float: left;
+}
+
+.devise-view .devise-sign-up .right {
+    padding: 20px 20px 0;
+    margin: auto;
+    width: 320px;
+    height: 400px;
+    float: left;
+    color: #fff;
+}
+//------btn--------
+.btn-info{
+  color: #fff;//字体颜色
+  background-color: #99f;//背景颜色
+    border-color: #99f;//边框颜色
+}
+.btn-danger {
+    color: #fff;//字体颜色
+    background-color: #ff6600;//背景颜色
+    border-color: #EF6C00;//边框颜色
+}
+
+.btn-danger:hover {
+    background-color: #900;//鼠标放置在btn上的背景颜色
+    border-color: #E65100;//鼠标放置在btn上的边框颜色
+}
+
+.btn-warning{
+  color: #fff;//字体颜色
+  background-color: #3c6;//背景颜色
+  border-color: #3c6;//边框颜色
+}
+
+.btn-success{
+  color: #fff;//字体颜色
+  background-color: #399;//背景颜色
+  border-color: #399;//边框颜色
+}
+
+.btn-warning.hover{
+  background-color: #033;//鼠标放置在btn上的背景颜色
+  border-color: #033;//鼠标放置在btn上的边框颜色
 }

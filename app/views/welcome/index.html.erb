@@ -1,41 +1,102 @@
-  <div class="jumbotron">
-    <h1 class="title">18K Offer</h1>
-    <p class="slogan">18K Offer 是一个提供18K薪水工作机会的求职网站。
-    <br>
-    我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。
-    <br>
-     凭借自己的努力和天份也会变 Winner
-    </p>
-    <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">马上应征</a></p>
+  <div class="col-md-12">
+  <div class="row box">
+    <div class="box-inner col-md-10 col-md-offset-1">
+      <h1 class="title">GO DESGINER</h1>
+      <p class="slogan">GO DESGINER 是一个生活梦想家的求职网站。
+        <br>
+        在这里，你可以找到城市、建筑、景观、室内、珠宝、工艺等让生活更美好的设计工作。
+        <br>
+       凭借自己的天才想象力，构筑美好城市生活，成就自己的梦想和事业。
+       <br>
+       城市生活因你而变得更美好！
+      </p>
+      <p class="lead">
+        <%= link_to '立刻行动', jobs_path, class: 'btn btn-danger' %>
+      </p>
+    </div>
   </div>
+</div>
 
-  <section id="company">
-    <div class = "container-fluid">
-      <div class="row">
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
-            <div class="caption">
-              <h3>北京朝阳建外SOHO</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
-            <div class="caption">
-              <h3>info@18koffer.com</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="thumbnail">
-            <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
-            <div class="caption">
-              <h3>010-12344321</h3>
-            </div>
-          </div>
-        </div>
+
+<div class="content-section-a">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-sm-5">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <h2 class="section-heading">规划设计师一定要热爱生活</h2>
+        <p class="lead">
+          如果你是热爱生活、对生活满怀期待与热情的梦想家，
+        <br>
+      能够在浮华的城市生活中坚守情怀，
+      <br>
+      并热爱我们生活的星球,
+      <br>
+      那你可以考虑在设计中实现你的生活梦想。
+      <br>
+      <br>
+      如果你还不知道怎么设计伟大的城市，
+      <br>
+      可以先去体验一下丹麦的城市生活营造模式
+      <br>
+<a target="_blank" href="https://www.fastcodesign.com/3061586/5-rules-for-designing-great-cities-from-denmarks-star-urbanist">五条伟大城市设计原则</a></p>
+      </p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
       </div>
     </div>
-  </section>
+  </div>
+</div>
+
+<div class="content-section-b">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <h2 class="section-heading">建筑设计要有想象力</h2>
+        <p class="lead">
+        建筑不仅仅是凝固的音乐和艺术，
+        <br>
+        更是我们每天生活的空间，
+        <br>
+        富有想象力的你，
+        <br>
+        一定可以帮我们实现梦想的生活。
+        <br>
+          <br>
+        如果你还不够有想象力，可以先走进别人的梦想世界。
+        <br>
+        <a target="_blank" href="http://www.arttube.nl/en/themes/">艺术设计入门</a></p>
+      </p>
+      </div>
+      <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+        <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section-a">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-sm-6">
+        <hr class="section-heading-spacer">
+        <div class="clearfix"></div>
+        <h2 class="section-heading">不会手绘，不会建模，不要紧<br>只要你 体能 足够好</h2>
+        <p class="lead">  如果你可以平板撑10分钟，
+        <br>
+        如果你可以一口气做50个俯卧撑，
+        <br>
+      如果你可以跑完半程马拉松21km，
+        <br>
+        那你还在犹豫什么呢？来吧！
+      </p>
+      </div>
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
+      </div>
+    </div>
+  </div>
+</div>
