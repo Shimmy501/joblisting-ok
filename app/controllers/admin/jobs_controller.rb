@@ -4,7 +4,16 @@ before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destro
    layout "admin"
 
 def index
-  @jobs = Job.all
+
+@jobs = case params[:order]
+when 'by_lower_bound'
+  Job.order('wage_lower_bound DESC')
+when 'by_upper_bound'
+  Job.order('wage_upper_bound DESC')
+else
+  Job.recent
+end
+@jobs = Job.paginate(:page => params[:page], :per_page => 6)
 end
 
 def show
