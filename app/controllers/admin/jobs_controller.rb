@@ -7,13 +7,12 @@ def index
 
 @jobs = case params[:order]
 when 'by_lower_bound'
-  Job.order('wage_lower_bound DESC')
+Job.order('wage_lower_bound').paginate(:page => params[:page], :per_page => 8)
 when 'by_upper_bound'
-  Job.order('wage_upper_bound DESC')
+Job.order('wage_upper_bound').paginate(:page => params[:page], :per_page => 8)
 else
-  Job.recent
+  Job.recent.paginate(:page => params[:page], :per_page => 8)
 end
-@jobs = Job.paginate(:page => params[:page], :per_page => 6)
 end
 
 def show
